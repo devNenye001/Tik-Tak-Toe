@@ -132,6 +132,7 @@ button[onclick="theX()"]:active {
   display: flex;
   justify-content: center;
   border-radius: 20px;
+  box-shadow: 2px 2px 1px #363636;
 }
 
 hr {
