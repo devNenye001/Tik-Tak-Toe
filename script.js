@@ -82,7 +82,7 @@ function cpuPlay() {
     .map((val, i) => (val === "" ? i : null))
     .filter((i) => i !== null);
 
-  // Step 1: Try to win
+  //Try to win
   for (let i of emptyIndices) {
     board[i] = cpu;
     if (checkWinner(cpu)) {
@@ -94,7 +94,7 @@ function cpuPlay() {
     board[i] = ""; // undo
   }
 
-  // Step 2: Block player win
+  //Block player win
   for (let i of emptyIndices) {
     board[i] = player;
     if (checkWinner(player)) {
@@ -105,7 +105,7 @@ function cpuPlay() {
     board[i] = ""; // undo
   }
 
-  // Step 3: Play random
+  //Play random
   const randomIndex =
     emptyIndices[Math.floor(Math.random() * emptyIndices.length)];
   board[randomIndex] = cpu;
@@ -140,7 +140,7 @@ function endGame(message) {
   gameActive = false;
   result.textContent = message;
 
-  // Prevent further clicking
+  //To Prevent further clicking
   squares.forEach((square) => (square.onclick = null));
 
   setTimeout(() => {
@@ -153,7 +153,7 @@ function updateScores() {
   cpuScoreText.textContent = `CPU: ${cpuScore}`;
 }
 
-// Initial state
+// To take back to initial state
 option.style.display = "flex";
 document.querySelector(".tik-tak-toe").style.display = "none";
 scores.style.display = "none";
