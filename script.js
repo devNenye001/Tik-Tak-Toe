@@ -74,7 +74,7 @@ function handleMove(index) {
   setTimeout(cpuPlay, 1000);
 }
 
-// cpu score
+// cpu moves
 function cpuPlay() {
   if (!gameActive) return;
 
