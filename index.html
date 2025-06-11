@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/favicon.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tik-Tak-Toe</title>
+  </head>
+  <body>
+
+    <!-- buttons -->
+    <div class="option">
+      <p>TIK-TAC-TOE</p>
+      <p>Choose a side:</p>
+      <div class="buttons">
+        <button onclick="theX()">X</button>
+        <button onclick="theO()">O</button>
+      </div>
+    </div>
+    
+    <!-- THE SCORES -->
+    <div class="scores" style="display: none;">
+      <h1 class="myScore">CPU: 0</h1>
+      <hr />
+      <h1 class="YourScore">YOU: 0</h1>
+    </div>
+
+    <!-- the tik-tak-toe -->
+    <div class="tik-tak-toe" style="display: none;">
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+    </div>
+
+    <!-- RESULT -->
+    <div class="result">YOU WIN!</div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,153 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.tik-tak-toe {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.square {
+  padding: 50px 50px;
+  border: 2px solid rgb(79, 77, 77);
+}
+
+.square:nth-child(1) {
+  border-top: none;
+  border-left: none;
+}
+
+.square:nth-child(2) {
+  border-top: none;
+}
+
+.square:nth-child(3) {
+  border-top: none;
+  border-right: none;
+}
+
+.square:nth-child(4) {
+  border-left: none;
+}
+
+.square:nth-child(6) {
+  border-right: none;
+}
+
+.square:nth-child(7) {
+  border-left: none;
+  border-bottom: none;
+}
+
+.square:nth-child(8) {
+  border-bottom: none;
+}
+
+.square:nth-child(9) {
+  border-right: none;
+  border-bottom: none;
+}
+
+/* the h1 text */
+
+.xMark {
+  color: red;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.oMark {
+  color: blue;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+/* the choices */
+.option {
+  color: #363636;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.option p {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.option button {
+  margin: 10px;
+  color: grey;
+  padding: 30px 40px;
+  font-size: 35px;
+  border-radius: 12px;
+  border: 2px solid grey;
+  box-shadow: 3px 2px 1px grey;
+}
+
+button[onclick="theO()"]:hover {
+  color: blue;
+  background-color: rgb(159, 159, 246);
+  padding: 32px 42px;
+  font-size: 38px;
+  border: 3px solid blue;
+  box-shadow: 4px 4px 1px blue;
+}
+
+button[onclick="theO()"]:active {
+  background-color: rgb(159, 159, 246);
+}
+
+button[onclick="theX()"]:hover {
+  color: rgb(255, 50, 50);
+  background-color: rgb(255, 143, 143);
+  padding: 32px 42px;
+  font-size: 38px;
+  border: 3px solid rgb(255, 50, 50);
+  box-shadow: 4px 4px 1px rgb(255, 50, 50);
+}
+
+button[onclick="theX()"]:active {
+  background-color: rgb(253, 204, 204);
+}
+
+/* scores */
+.scores {
+  margin: 50px;
+  height: 45px;
+  width: 270px;
+  border: 2px solid#363636;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+hr {
+  border: 1.5px solid #363636;
+  margin: 0px 10px;
+}
+
+.result {
+  margin: 50px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    
+  .square {
+    padding: 30px 40px;
+  }
+}
